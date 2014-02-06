@@ -1,0 +1,28 @@
+doctype
+html
+  include ./head
+
+  body
+
+    .main-box
+      #toast.toast
+      .ui.items.inline-block
+        each client in clients
+        
+          a.item.height-75(href="/#{client._id}")
+            .ui.corner.label
+              if client.online == "true"
+                i.circle.green.icon
+              else
+                i.circle.blank.icon
+
+            .content
+              .name #{client.nickname}
+              i.icon(class="#{client.os}")
+
+
+
+
+
+  include ./scripts
+
