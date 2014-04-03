@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $('#location, #keyboard-box, body #toast').hide();
 
-  var socket = io.connect('//node.la:5000');
+  var socket = io.connect(location.protocal + location.host+':5002');
   socket.on('connect', function() {
     console.log('connect');
   });

@@ -3,7 +3,7 @@ keys = require "./keys"
 module.exports = 
   url: "http://node.la"
   domain: "node.la"
-  port: 5000
+  port: 5002
   keys:
     twitterKey: keys.twitterKey
     twitterSecret: keys.twitterSecret
