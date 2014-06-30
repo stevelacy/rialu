@@ -1,0 +1,17 @@
+.content  
+  .box
+    @extend .border-box
+    display flex
+    min-height 50px
+    background white-shade
+    padding 10px
+    width 90%
+    margin 5%
+    justify-content center
+    flex-wrap wrap
+
+@media all and (max-width: phone-width)
+  .content
+    .box
+      width 100%
+      margin 0

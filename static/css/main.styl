@@ -1,12 +1,4 @@
 
-
-/**, *:before, *:after
-  -moz-box-sizing border-box
-  -webkit-box-sizing border-box
-  box-sizing border-box
-*/
-
-
 html, body
   margin 0
   padding 0
@@ -18,25 +10,23 @@ body
 
 @import "./includes/resets"
 @import "./includes/colors"
+@import "./includes/dimentions"
 @import "./includes/border-box"
 @import "./includes/buttons"
-
 @import "./includes/header"
 @import "./includes/box"
+@import "./includes/item"
 
 .wrapper
   width 100%
 
 .content
   display flex
+  flex-wrap wrap
+  justify-content space-around
   width 80%
   margin 10%
-  .box
-    @extend .border-box
-    display flex
-    min-height 50px
-    background white-shade
-    padding 10px
-    width 90%
-    margin 5%
-    justify-content center
+@media all and (max-width: phone-width)
+  .content
+    width 95%
+    margin 2.5%
