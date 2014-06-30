@@ -2,8 +2,10 @@ doctype html
 html
   head
     title #{config.name}
+    include ./head
 
   body
     .content
       .box
-        a.button.blue(href="/auth/twitter") Sign in with Twitter
+        a(href="/auth/twitter")
+          .button.blue Sign in with Twitter
