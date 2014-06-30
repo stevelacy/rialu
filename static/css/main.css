@@ -20,12 +20,15 @@ a {
   box-shadow: 0 1px 1px #cdcdcd;
 }
 .button {
+  height: 15px;
+  min-width: 30px;
   padding: 10px;
   outline: none;
   margin: 10px;
   border: none;
   background: #cdcdcd;
-  align-content: center;
+  text-align: center;
+  font-size: 16px;
 }
 .button.green {
   background: #659d32;
@@ -74,9 +77,6 @@ a {
   min-width: 100px;
   height: 50px;
   margin: 10px;
-}
-.item .button {
-  flex: none;
 }
 .wrapper {
   width: 100%;
