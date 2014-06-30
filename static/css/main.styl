@@ -1,7 +1,11 @@
-*, *:before, *:after
+
+
+/**, *:before, *:after
   -moz-box-sizing border-box
   -webkit-box-sizing border-box
   box-sizing border-box
+*/
+
 
 html, body
   margin 0
@@ -11,5 +15,28 @@ body
   width 100%
   background #efefef
   font-family 'Open Sans', sans-serif
+  display flex
 
 @import "./includes/resets"
+@import "./includes/colors"
+@import "./includes/border-box"
+@import "./includes/buttons"
+
+@import "./includes/header"
+@import "./includes/box"
+
+.wrapper
+  width 100%
+  display flex
+.content
+  width 80%
+  margin 10%
+  .box
+    @extend .border-box
+    display flex
+    min-height 50px
+    background white-shade
+    padding 10px
+    width 90%
+    margin 5%
+    justify-content center
